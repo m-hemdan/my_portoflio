@@ -7,12 +7,17 @@
     "build": "vue-cli-service build"
   },
   "dependencies": {
+    "animate.css": "^4.1.1",
     "core-js": "^3.8.3",
     "vue": "^3.2.13",
+    "vue-responsive-video-background-player": "^2.3.1",
     "vue-router": "^4.0.3",
+    "vue3-animate-onscroll": "^1.0.6",
+    "vuetify": "^3.7.4",
     "vuex": "^4.0.0"
   },
   "devDependencies": {
+    "@mdi/font": "^7.4.47",
     "@vue/cli-plugin-babel": "~5.0.0",
     "@vue/cli-plugin-router": "~5.0.0",
     "@vue/cli-plugin-vuex": "~5.0.0",
