@@ -1,6 +1,7 @@
 <template>
   <div>
     <img class="video" src="@/assets/img2.png" />
+    <v-divider></v-divider>
 
     <div class="about">
       <v-row class="justify-around">
@@ -23,7 +24,7 @@
             <v-btn size="large" class="mt-5 btn-text">Know More about US</v-btn>
           </v-row>
         </v-col>
-        <v-col cols="12" md="6" lg="6" xs="12">
+        <v-col cols="12" md="6" lg="6" xs="12" justify="center">
           <img
             v-animate-onscroll="'animated fadeInRight'"
             src="@/assets/img4.png"
@@ -32,20 +33,53 @@
         </v-col>
       </v-row>
     </div>
-   
 
-  <PortofolioView></PortofolioView>
+<v-divider></v-divider>
+    <PortofolioView></PortofolioView>
+   <v-divider></v-divider>
+    <v-container>
+      <v-title
+        ><strong><h1>How do we work ?</h1></strong></v-title
+      >
+      <div>
+        <div class="d-flex">
+          <v-expansion-panels v-model="panel"  multiple class="expandPanels">
+            <v-expansion-panel class="panel">
+              <v-expansion-panel-title><h2>Info gathering</h2></v-expansion-panel-title>
+              <v-expansion-panel-text class="subPanel"> The first step of every successful website is to collect all the information that will help us develop a beautiful website. </v-expansion-panel-text>
+            </v-expansion-panel>
+
+            <v-expansion-panel class="panel">
+              <v-expansion-panel-title><h2>Planing</h2></v-expansion-panel-title>
+              <v-expansion-panel-text class="subPanel"> We provide one-on-one customer service, allowing us to get the most out of you in terms of your ideas, customization, preferred designs, and your own specifications. </v-expansion-panel-text>
+            </v-expansion-panel>
+
+            <v-expansion-panel class="panel">
+              <v-expansion-panel-title><h2>Design</h2></v-expansion-panel-title>
+              <v-expansion-panel-text class="subPanel"> We thoroughly understand the importance of a website being both visually appealing and functional.  </v-expansion-panel-text>
+            </v-expansion-panel>
+            <v-expansion-panel class="panel">
+              <v-expansion-panel-title><h2>Customizing</h2></v-expansion-panel-title>
+              <v-expansion-panel-text class="subPanel"> We will customize your website to exceed your expectations.  </v-expansion-panel-text>
+            </v-expansion-panel>
+          </v-expansion-panels>
+        </div>
+      </div>
+    </v-container>
+    <v-divider></v-divider>
+     <FooterView></FooterView>
   </div>
 </template>
 <script>
-import PortofolioView from "../components/PortofolioView.vue"
-
+import PortofolioView from "../components/PortofolioView.vue";
+import FooterView from "../components/FooterView.vue";
 
 export default {
-  components: {PortofolioView}
-  
-  
-}
+  components: { PortofolioView, FooterView },
+  data: () => ({
+    panel: [0, 1, 2, 3],
+  }),
+};
 </script>
 <style scoped>
 .video {
@@ -70,8 +104,10 @@ export default {
   margin-top: 30px;
 }
 .imgDescription {
-  width: 70%;
+  width: 90%;
   height: 350px;
+  margin-left: 50px;
+  margin-right: 50px !important ;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.301), 0 6px 20px 0 rgba(0, 0, 0, 0.34);
 }
 .btn-text:hover {
@@ -79,4 +115,21 @@ export default {
   background: rgba(230, 230, 87, 0.834);
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.301), 0 6px 20px 0 rgba(0, 0, 0, 0.34);
 }
+.expandPanels{
+   margin-top: 50px;
+
+
+}
+.panel{
+
+ 
+  color: rgb(39, 57, 39);
+  padding: 2px !important;
+    
+}
+.subPanel{
+
+  background: rgba(28, 100, 77, 0.145);
+}
+
 </style>
