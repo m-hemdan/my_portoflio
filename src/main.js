@@ -10,6 +10,7 @@ import 'animate.css';
 import '@mdi/font/css/materialdesignicons.css'
 import VueAnimateOnScroll from 'vue3-animate-onscroll';
 import './assets/global.css'
+
 const vuetify = createVuetify({ components, directives })
 
 

@@ -17,6 +17,13 @@ const routes = [
     path:'/portfolio',
     name:'Portfolio',
     component:() =>import('../views/PreviousView.vue')
+  },
+  {
+    path:'/contact',
+    name: 'contact',
+    component:()=>import('../views/ContactView.vue')
+
+
   }
 ]
 

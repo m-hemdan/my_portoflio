@@ -69,13 +69,9 @@ margin-top:  100px;
    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.301), 0 6px 20px 0 rgba(0, 0, 0, 0.34);
      animation-duration: 3s !important;
 }
-.img_card{
-   
-    margin: 5px !important;
-    
-}
+
 .img_card:hover{
-    margin: 0 !important;
+    
       box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.301), 0 6px 20px 0 rgba(0, 0, 0, 0.34);
   
 }

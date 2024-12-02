@@ -39,7 +39,7 @@
    <v-divider></v-divider>
     <v-container>
       <v-title
-        ><strong><h1>How do we work ?</h1></strong></v-title
+        ><strong><h1>How do I work?</h1></strong></v-title
       >
       <div>
         <div class="d-flex">
@@ -67,7 +67,7 @@
       </div>
     </v-container>
     <v-divider></v-divider>
-     <FooterView></FooterView>
+   
   </div>
 </template>
 <script>
@@ -82,10 +82,7 @@ export default {
 };
 </script>
 <style scoped>
-.video {
-  width: 100% !important;
-  height: 480px !important;
-}
+
 .about {
   margin-top: 100px;
   background: linear-gradient(
