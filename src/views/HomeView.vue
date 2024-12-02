@@ -1,6 +1,7 @@
 <template>
   <div>
-    <img class="video" src="@/assets/img2.png" />
+    
+    <v-img class="explore"  :lazy-src='loadSrc' :src="src" ></v-img>
     <v-divider></v-divider>
 
     <div class="about">
@@ -27,6 +28,7 @@
         <v-col cols="12" md="6" lg="6" xs="12" justify="center">
           <img
             v-animate-onscroll="'animated fadeInRight'"
+            lazy-src="@/assets/load.svg"
             src="@/assets/img4.png"
             class="imgDescription"
           />
@@ -78,6 +80,8 @@ export default {
   components: { PortofolioView, FooterView },
   data: () => ({
     panel: [0, 1, 2, 3],
+    src:require('@/assets/img2.png'),
+    loadSrc:require('@/assets/load.svg')
   }),
 };
 </script>
@@ -93,6 +97,7 @@ export default {
   );
   color: whitesmoke;
 }
+
 .textDescription {
   font-size: 24px !important;
   font-family: "Times New Roman", Times, serif;

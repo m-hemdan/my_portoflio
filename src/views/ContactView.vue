@@ -39,7 +39,7 @@
             color="white"
           ></v-progress-circular>
         </v-btn>
-        <h5 class="warningClass text-center mt-5" v-if="failedAdd">
+        <h5 class="warningClass text-center" v-if="failedAdd">
           Sorry, there is something wrong
         </h5>
         <h5 class="warningClass text-center mt-5" v-if="repeatMessage">

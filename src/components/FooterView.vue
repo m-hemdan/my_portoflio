@@ -33,7 +33,7 @@
 
     <div class="pt-0">
       <v-row class="justify-space-between">
-        <v-col cols="6" lg="6" md="6" sm="12">
+        <v-col cols="12" lg="6" md="6" sm="12">
           <v-btn variant="text" class="mt-10">
             <v-icon>mdi-phone</v-icon>
             <span > +1 365-440-2065</span>
@@ -49,7 +49,7 @@
             <span > Mississauga, Ontario, Canada</span>
           </v-btn>
         </v-col>
-        <v-col cols="6" lg="6" md="6" sm="12">
+        <v-col cols="12" lg="6" md="6" sm="12">
           <a target="_blank" href="https://maps.app.goo.gl/83o2p3A1rWJrynpj7">
             <img src="@/assets/img7.png" width="350px" class="mt-2" />
           </a>
