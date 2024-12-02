@@ -1,7 +1,7 @@
 <template>
   <v-toolbar class="toolbar">
     <v-title>
-      <v-btn >
+      <v-btn>
         <v-icon>mdi-phone</v-icon>
         <span class="title_text"> +1 365-440-2065</span>
       </v-btn>
@@ -47,7 +47,6 @@
         <div
           class="d-flex justify-end sheet animate__animated animate__fadeIn slow"
         >
-        
           <v-sheet class="ma-2 pa-2 routerLinkHover">
             <router-link to="/about" class="routerLink"
               ><h3>
@@ -65,9 +64,9 @@
               <h3><v-icon>mdi-contacts-outline</v-icon> Contact</h3>
             </router-link>
           </v-sheet>
-            <v-sheet class="ma-2 pa-2 sheet routerLinkHover">
-            <router-link to="/" class="routerLink">
-              <h3><v-icon>mdi-home</v-icon> Home</h3>
+          <v-sheet class="ma-2 pa-2 routerLinkHover">
+            <router-link to="/contact" class="routerLink">
+              <h3><v-icon>mdi-home-outline</v-icon> Home</h3>
             </router-link>
           </v-sheet>
         </div>
@@ -76,13 +75,13 @@
   </v-card>
 
   <router-view />
-    <FooterView></FooterView>
+  <FooterView></FooterView>
 </template>
 <script>
 import FooterView from "./components/FooterView.vue";
 export default {
-  components: {  FooterView },
-}
+  components: { FooterView },
+};
 </script>
 <style>
 #app {
