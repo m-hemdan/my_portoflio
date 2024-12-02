@@ -47,6 +47,11 @@
         <div
           class="d-flex justify-end sheet animate__animated animate__fadeIn slow"
         >
+            <v-sheet class="ma-2 pa-2 routerLinkHover">
+            <router-link to="/contact" class="routerLink">
+              <h3><v-icon>mdi-home-outline</v-icon> Home</h3>
+            </router-link>
+          </v-sheet>
           <v-sheet class="ma-2 pa-2 routerLinkHover">
             <router-link to="/about" class="routerLink"
               ><h3>
@@ -64,11 +69,7 @@
               <h3><v-icon>mdi-contacts-outline</v-icon> Contact</h3>
             </router-link>
           </v-sheet>
-          <v-sheet class="ma-2 pa-2 routerLinkHover">
-            <router-link to="/contact" class="routerLink">
-              <h3><v-icon>mdi-home-outline</v-icon> Home</h3>
-            </router-link>
-          </v-sheet>
+      
         </div>
       </v-col>
     </v-row>
