@@ -1,7 +1,7 @@
 <template>
   <div>
     
-    <v-img class="explore"  :lazy-src='loadSrc' :src="src" ></v-img>
+    <v-img class="explore"   :src="src" ></v-img>
     <v-divider></v-divider>
 
     <div class="about">
