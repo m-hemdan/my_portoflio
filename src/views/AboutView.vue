@@ -3,7 +3,7 @@
     <v-container>
       <v-card class="mx-auto" subtitle="Let's introduce" width="100%">
         <template v-slot:title>
-          <span class="text-pink" ><h3>About me _____</h3></span>
+          <span class="text-pink"><h3>About me _____</h3></span>
         </template>
 
         <v-card-text class="bg-surface-light pt-4">
@@ -21,27 +21,29 @@
         </v-card-text>
       </v-card>
       <v-container class="text-center">
-       
-            <v-btn
-              class="red-lighted-2 ma-5  resumeBtn"
-             
-              outlined
-              :href="pdf"
-              download
-            >
-              Download My resume
-            </v-btn>
-        <PdfApp style="height: 90vh" :pdf="pdf"></PdfApp
-      ></v-container>
+      
+
+        <v-btn
+          class="red-lighted-2 ma-5 resumeBtn"
+          outlined
+          :href="pdf"
+          download
+        >
+          Download My resume <v-icon>mdi-download</v-icon>
+        </v-btn>
+       <div ><embed  :src='pdf' type="application/pdf" width="100%" height="900px"></div>
+      </v-container>
     </v-container>
   </div>
 </template>
 <script>
-import PdfApp from "vue3-pdf-app";
+// import PdfApp from "vue3-pdf-app";
 import "vue3-pdf-app/dist/icons/main.css";
+import PDFViewer from "pdf-viewer-vue";
 export default {
   components: {
-    PdfApp,
+    // PdfApp,
+    PDFViewer,
   },
   data: () => ({
     pdf: "/files/MarwaResume.pdf",
@@ -49,13 +51,12 @@ export default {
 };
 </script>
 <style>
-.resumeBtn{
+.resumeBtn {
   color: white;
-  background: #F06292;
+  background: #f06292;
 }
-.resumeBtn:hover{
-color: #F06292;
-background: rgba(255, 192, 203, 0.304);
-
+.resumeBtn:hover {
+  color: #f06292;
+  background: rgba(255, 192, 203, 0.304);
 }
 </style>

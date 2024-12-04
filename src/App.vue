@@ -1,4 +1,6 @@
 <template>
+ 
+     
   <div class="hidden-md-and-down">
     <v-toolbar class="toolbar">
       <v-title>
@@ -142,6 +144,8 @@
       </v-navigation-drawer>
       
     </v-layout>
+    
+  
   </div>
 
   <router-view />
@@ -152,6 +156,7 @@ import FooterView from "./components/FooterView.vue";
 export default {
   components: { FooterView },
   data: () => ({
+    xx:null,
     drawer: false,
     group: null,
   }),
