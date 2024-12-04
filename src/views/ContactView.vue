@@ -78,7 +78,7 @@ import { collection, addDoc, getDocs } from "firebase/firestore";
 import { db } from "../firebase.js";
 export default {
   data: () => ({
-    dialogSuccess: true,
+    dialogSuccess: false,
     loading: false,
     firstName: "",
 
